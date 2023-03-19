@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400&display=swap");
+/* body {
+  overflow-y: scroll;
+} */
+.single-journal {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.title {
+  font-family: "Kalam";
+  width: 70vw;
+  font-size: 40px;
+  margin-left: 250px;
+  text-align: left;
+}
+.content {
+  font-family: "Kalam";
+  font-size: 20px;
+  text-align: left;
+  width: 70vw;
+  margin-left: 250px;
+}

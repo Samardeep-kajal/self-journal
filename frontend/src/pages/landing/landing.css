@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
+
+html {
+  overflow: hidden;
+}
+.about-us {
+  font-size: 16px;
+  font-weight: bold;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.h-nav {
+  background-color: #261307;
+  font-family: "Raleway", sans-serif;
+  font-size: medium;
+  line-height: 50px;
+  color: #fff;
+  position: sticky;
+  margin: -16px;
+}
+.h-nav img {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+}
+.nav-logo {
+  width: 100px;
+}
+
+.h-nav li {
+  display: inline-block;
+  list-style: none;
+}
+.h-nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.h-nav-logo {
+  position: absolute;
+  margin: 4px;
+  margin-left: 20px;
+  display: flex;
+  color: white;
+  margin-right: 20px;
+}
+.h-nav-logo h4 {
+  position: absolute;
+  margin-top: 0;
+  margin-left: 36px;
+}
+.landing-container {
+  display: flex;
+}
+
+.landing-img {
+  position: absolute;
+  height: 500px;
+  margin-top: 100px;
+  margin-left: 850px;
+}
+.landing-quote {
+  position: absolute;
+  width: 600px;
+  height: 150px;
+  left: 100px;
+  top: 60px;
+
+  font-family: "Italiana";
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 60px;
+
+  color: #261307;
+}
+.landing-subhead {
+  font-size: 20px;
+  font-family: "Italiana", serif;
+  position: absolute;
+  margin-top: 270px;
+  margin-left: 113px;
+  font-weight: bold;
+}
+.login-button {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  left: 260px;
+  top: 400px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  background: #261307;
+  border-radius: 36px;
+  cursor: pointer;
+}
+.login-signup-btn {
+  text-decoration: none;
+  color: white;
+}
+.hr-line {
+  position: absolute;
+  width: 360px;
+  height: 2px;
+  left: 230px;
+  top: 450px;
+  background-color: #261307;
+}
+.signup-button {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  left: 260px;
+  top: 470px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  background: #261307;
+  border-radius: 36px;
+  cursor: pointer;
+}
+/* Login Form CSS */
+.login-box {
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 230px;
+  width: 300px;
+  left: 260px;
+  top: 400px;
+  align-items: center;
+}
+
+.login-head {
+  font-family: "Raleway", sans-serif;
+  background-color: #261307;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.input-area {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  width: 290px;
+  height: 40px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  margin-left: 1px;
+}
+
+.login-submit-form-btn {
+  width: 200px;
+  height: 40px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  margin-left: 10px;
+  font-size: 20px;
+  background: #261307;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Signup form CSS */
+.signup-box {
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 340px;
+  width: 300px;
+  left: 260px;
+  top: 380px;
+  align-items: center;
+}
+
+.signup-head {
+  font-family: "Raleway", sans-serif;
+  background-color: #261307;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.signup-submit-form-btn {
+  width: 250px;
+  height: 50px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  margin-left: 10px;
+  font-size: 20px;
+  background: #261307;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #261307 transparent #555 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

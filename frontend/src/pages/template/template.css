@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+.template-container {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.journal-heading {
+  display: inline;
+  font-family: "Raleway";
+  font-weight: bolder;
+  font-size: 35px;
+  float: left;
+  margin-left: 21%;
+  text-decoration: underline;
+}
+.temp-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 21%;
+  width: 80%;
+}
+.write-in {
+  padding-bottom: 10px;
+  width: 90%;
+}
+.write-in-topic {
+  float: left;
+  font-family: "Raleway";
+  font-weight: lighter;
+}
+.write-in-text {
+  font-family: "Raleway";
+  background-color: #fef3d2;
+  border: #261307 2px solid;
+  border-radius: 10px;
+  font-size: 20px;
+  float: left;
+  width: 90%;
+  box-sizing: border-box;
+  height: 140px;
+  resize: none;
+  word-wrap: normal;
+}
+.write-in-title {
+  font-family: "Raleway";
+  background-color: #fef3d2;
+  border: #261307 2px solid;
+  border-radius: 10px;
+  font-size: 20px;
+  float: left;
+  width: 90%;
+  box-sizing: border-box;
+  height: 45px;
+  resize: none;
+  word-wrap: normal;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.write-in-save {
+  margin-top: 45px;
+  float: right;
+  margin-right: 180px;
+  font-family: "Raleway";
+  width: 120px;
+  height: 40px;
+  background-color: #261307;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
