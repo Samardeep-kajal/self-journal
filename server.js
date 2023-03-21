@@ -2,27 +2,27 @@ const path = require("path");
 const express = require("express");
 const colors = require("colors");
 const dotenv = require("dotenv").config();
-const connectDB = require("./config/db");
+const connectDB = require("./backend/config/db");
 console.log("Connecting to database....");
-const { errorHandler } = require("./middleware/errorMiddleware");
+const { errorHandler } = require("./backend/middleware/errorMiddleware");
 const app = express();
 console.log("Database connected successfully");
 connectDB();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use("/api/users", require("./routes/userRoutes"));
+app.use("/api/users", require("./backend/routes/userRoutes"));
 console.log("User routes initialized");
-app.use("/api/journals", require("./routes/journalRoutes"));
+app.use("/api/journals", require("./backend/routes/journalRoutes"));
 console.log("journal routes are initialized");
 
 //Serve frontend/client
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../frontend/build")));
+  app.use(express.static(path.join(__dirname, "./frontend/build")));
 
   app.get("*", (req, res) =>
     res.sendFile(
-      path.resolve(__dirname, "../", "frontend", "build", "index.html")
+      path.resolve(__dirname, "./", "frontend", "build", "index.html")
     )
   );
 } else {
