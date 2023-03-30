@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Hnav from "../../components/Hnav";
 import { toast } from "react-toastify";
 import "./landing.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import { signup, reset } from "../../features/auth/authSlice";
 import Spinner from "../../components/Spinner";
 
@@ -121,6 +121,9 @@ export default function Signup() {
               Submit
             </button>
           </form>
+          <p className="form-nav">
+            Already an user? <NavLink to="/login">Log-in!</NavLink>
+          </p>
         </section>
         <img src="/media/Landing.jpeg" class="landing-img"></img>
       </div>

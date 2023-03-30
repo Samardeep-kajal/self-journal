@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
 
 html {
-  overflow: hidden;
+  overflow: auto;
 }
 .about-us {
   font-size: 16px;
@@ -81,7 +81,7 @@ body {
   font-size: 20px;
   font-family: "Italiana", serif;
   position: absolute;
-  margin-top: 270px;
+  margin-top: 250px;
   margin-left: 113px;
   font-weight: bold;
 }
@@ -124,6 +124,8 @@ body {
   cursor: pointer;
 }
 /* Login Form CSS */
+.login-page {
+}
 .login-box {
   position: absolute;
   border: 2px solid black;
@@ -131,7 +133,7 @@ body {
   height: 230px;
   width: 300px;
   left: 260px;
-  top: 400px;
+  top: 380px;
   align-items: center;
 }
 
@@ -178,7 +180,7 @@ body {
   height: 340px;
   width: 300px;
   left: 260px;
-  top: 380px;
+  top: 350px;
   align-items: center;
 }
 

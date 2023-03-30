@@ -27,17 +27,13 @@ export default function Landing() {
           Join us in this journey & make this platform a small part of your
           self-healing.
         </h3>
-        <button className="login-button">
-          <Link to="/login" className="login-signup-btn">
-            Log in
-          </Link>
-        </button>
+        <Link to="/login" className="login-signup-btn">
+          <button className="login-button">Log in</button>
+        </Link>
         <hr className="hr-line"></hr>
-        <button className="signup-button">
-          <Link to="/signup" className="login-signup-btn">
-            Sign-up
-          </Link>
-        </button>
+        <Link to="/signup" className="login-signup-btn">
+          <button className="signup-button">Sign-up</button>
+        </Link>
         <img src="/media/Landing.jpeg" className="landing-img"></img>
       </div>
     </div>

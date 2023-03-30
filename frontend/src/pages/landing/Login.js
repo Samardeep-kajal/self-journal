@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./landing.css";
 import Hnav from "../../components/Hnav";
 import { toast } from "react-toastify";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { login, reset } from "../../features/auth/authSlice";
 import Spinner from "../../components/Spinner";
@@ -54,7 +54,7 @@ export default function Login() {
   }
 
   return (
-    <div>
+    <div className="login-page">
       <Hnav />
       <div className="landing-container">
         <h1 className="landing-quote">
@@ -90,6 +90,9 @@ export default function Login() {
               Submit
             </button>
           </form>
+          <p className="form-nav">
+            New user? <NavLink to="/signup">Sign-up!</NavLink>
+          </p>
         </section>
         <img src="/media/Landing.jpeg" class="landing-img"></img>
       </div>
